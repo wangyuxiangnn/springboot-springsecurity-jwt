@@ -1,0 +1,26 @@
+POST localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "testpassword"
+}
+
+###
+POST localhost:8080/users/signup
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "testpassword",
+  "age": 26
+}
+
+###
+POST http://localhost:8080/users/userList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0LVtST0xFX0FETUlOLCBBVVRIX1dSSVRFXSIsImlhdCI6MTU1Mjk1ODM3MiwiZXhwIjoxNTUyOTU4OTcyfQ.GfRllqynWKoBRqE421qVKoblYmIBoSYmv_7uVBoSqIFjHzPQwljxiNOOfS9fhmTdE43PLDz4g6PynE8uIF-FgA
+
+{}
+
+###
